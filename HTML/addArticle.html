@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <title></title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Language" content="fr"/>
+    
+       
+    <body>
+        <form action="#" method="POST" id="addArticle">
+            <fieldset>
+                <legend>Ajouter un article</legend>
+                <div>
+                    <label for="title">Titre de votre article :</label>
+                    <input type="text" name="title" required/>
+                </div>
+                <div>
+                    <label for="img">Ajouter une image <em>(optionnel)</em> :</label><input type="file" name="img" accept=".png, .jpg, .jpeg"/>
+                </div>
+                <div>
+                    <label for="content">Contenu de votre article :</label>
+                    <textarea name="content" id="" cols="30" ></textarea>
+                </div>
+                <div>
+                    <label for="typo">Choisissez votre typographie :</label>
+                    <select name="typo" id="typo">
+                        <option value="arial">Arial</option>
+                        <option value="timesnewroman">Times New Roman</option>
+                        <option value="comic">Comic Sans MS</option>
+                        <option value="lobster">Lobster</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="author">Qui êtes-vous ?</label>
+                    <select name="author" id="author">
+                        <option value=""></option>
+                        <option value="remyvast">Rémy Vast</option>
+                        <option value="robinrodriguez">Robin Rodriguez</option>
+                        <option value="alexiscauchois">Alexis Cauchois</option>
+                        <option value="julienragain">Julien Ragain</option>
+                        <option value="benjaminfeuguard">Benjamin Feuguard</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="author">Tags <em>(optionnel)</em> :</label>
+                    <input type="text">
+                </div>
+                <input type="submit" value="Envoyer">
+                <button>
+                    <a href="index.html" style="text-decoration:none;color:black;">Cancel</a>
+                </button>
+            </fieldset>
+        </form>    
+    </body>
+</html>

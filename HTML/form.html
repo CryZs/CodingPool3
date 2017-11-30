@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form - Formation Coding Pool 3</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Language" content="fr"/>
+    </head>
+    <body>
+        <form action="" method="POST" id="form-id">
+            <fieldset>
+                <legend>Formulaire d'inscription</legend>
+                <div>
+                    <label for="name">Nom :</label>
+                    <input id="name" type="text" name="lastname" placeholder="Doe">
+                </div>
+                <div>
+                    <label>Prénom : <input type="text" name="firstname" placeholder="John"></label>
+                </div>
+                <div>
+                    <label for="number">Numéro de téléphone :</label>
+                    <input name="number" type="text" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$">
+                </div>
+                <div>
+                    <label for="range">Range : </label>
+                    <input type="range" name="note" min="0" max="10">
+                </div>
+                <div>
+                    <select name="country">
+                        <option value="fr">France</option>
+                        <option value="be">Belgique</option>
+                    </select>
+
+                    <select name="activities" multiple>
+                        <option value="sport">Sport</option>
+                        <option value="games">Jeux</option>
+                        <option value="reading">lecture</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit">Envoyer</button>
+                    <!--- // --->
+                    <input type="submit" value="Envoyer"/>
+                </div>
+            </fieldset>
+        </form>
+
+
+        <!--- Sortie du form --->
+        <input type="submit" value="Envoyer" form="form-id">
+    </body>
+</html>

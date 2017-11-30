@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-type" Content="fr">
+        <title>Background-img - Coding Pool 3</title>
+        <link rel="stylesheet" href="background-img.css">
+        <script type="text/javascript">
+        $(document).ready(function() {
+		        $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			        var page = $(this).attr('href'); // Page cible
+			        var speed = 1000; // Durée de l'animation (en ms)
+			    $('html, body').animate( {scrollTop: $(page).offset().top  - 80}, speed); // Go
+			    return false;
+		    });
+	    });
+        </script>
+    </head>
+    <body>
+        <div class="oranges">
+            <a href="#bw" class="js-scrollTo">
+                <button>Black & White</button>
+            </a>
+        </div>
+        <div class="green"></div>
+        <div class="lemon" id="bw"></div>
+        <div class="grey"></div>
+    </body>
+</html>

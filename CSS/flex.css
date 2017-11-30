@@ -1,0 +1,40 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    padding:0;margin: 0;
+}
+/* Width à enlever pour les deux autres flex - Conflit avec la propriété div si on veut les margin de la même taille */
+div{
+    width:30%;
+}
+.flex1{
+    display:flex;
+}
+.flex1 div{
+    background-color:#AAF;
+    margin:0 20px;
+    flex:1; /* prend le dessus sur .div{width:30%;} */
+}
+.flex1 div:first-child{
+    margin-left: 40px;
+}
+.flex1 div:last-child{
+    margin-right:40px;
+}
+.flex2{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.flex2 div{
+    background-color:#AFA;
+}
+.flex3{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.flex3 div{
+    background-color:#FAA;
+}

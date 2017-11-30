@@ -1,0 +1,42 @@
+@keyframes myanimation{
+    0%{ top: 0;left: 0;background-color:red;}
+    5%{top: 1%;left: 5%;background-color:brown;}
+    10%{top: 89%;left: 32%;background-color:lime;}
+    15%{top: 2%;left: 13%;background-color:blue;}
+    20%{top: 88%;left: 75%;background-color:orange;}
+    25%{top: 3%;left: 0%;background-color:yellow;}
+    30%{top: 87%;left: 85%;background-color:pink;}
+    35%{top: 4%;left: 55%;background-color:green;}
+    40%{top: calc(94% - 100px);left: 6%;background-color:black;}
+    45%{top: 5%;left: 2%;background-color:aliceblue;}
+    50%{top: 85%;left: 65%;background-color:sandybrown;}
+    55%{top: 1%;left: 5%;background-color:chartreuse;}
+    60%{top: calc(96% - 100px);left: 32%;background-color:bisque;}
+    65%{top: 0%;left: 0%;}
+    70%{top: 88%;left: 75%;background-color:navajowhite;}
+    75%{top: 3%;left: 0%;background-color:khaki;}
+    80%{top: 87%;left: 85%;background-color:lawngreen;}
+    85%{top: 4%;left: 55%;background-color:azure;}
+    90%{top: 86%;left: 6%;background-color:peru;}
+    95%{top: 5%;left: 2%;background-color:rebeccapurple;}
+    98%{top: 85%;left: 65%;background-color:crimson;}
+    100%{top: calc(54% - 100px);left: calc(90% - 100px);background-color:red;}
+}
+*{
+    box-sizing:border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.animate{
+    position:absolute;
+    top: 0;left: 0;
+    width: 100px;height: 100px;
+    background-color: royalblue;
+    animation-name:myanimation;
+    animation-duration: 15s;
+    animation-iteration-count: 1000000;
+    animation-fill-mode:forwards;
+}
